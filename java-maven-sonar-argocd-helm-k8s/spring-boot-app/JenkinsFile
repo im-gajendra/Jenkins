@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'gajendradevops/maven-gaajendra-docker-agent:v1'
+      image 'gajendradevops/maven-gajendra-docker-agent:v1'
       args '--user root -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
